@@ -1,0 +1,20 @@
+<div class="col s12 m7">
+    <h2 class="header"><%= pokemon.name%></h2>
+    <div class="card horizontal">
+      <div class="card-image">
+        <img src="<%= pokemon.sprites.other['official-artwork'].front_default%> " alt="<%= pokemon.name%> image ">
+      </div>
+      <div class="card-stacked">
+        <div class="card-content">
+            <h3>Weight: <%= pokemon.weight/10 %>kg </h3>
+            <h3>Height: <%= pokemon.height/10 %>m </h3>
+            <h3>Moves: <%= pokemon.moves[0].move.name %> </h3>
+            <h3>Experience: <%= pokemon.base_experience %> </h3>
+            <h3>Ability: <%= pokemon.abilities[0].ability.name %> </h3>
+        </div>
+        <div class="card-action">
+            <a href="/pokemon">Back to Favorites</a>
+        </div>
+      </div>
+    </div>
+  </div>
